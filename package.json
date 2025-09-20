@@ -4,7 +4,11 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "node --watch src/index.js"
+    "dev": "node --watch src/index.js",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "repository": {
     "type": "git",
@@ -21,5 +25,9 @@
   "dependencies": {
     "dotenv": "^17.2.2",
     "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "eslint": "^9.36.0",
+    "eslint-cli": "^1.1.1"
   }
 }
