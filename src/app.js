@@ -5,7 +5,10 @@ import morgan from 'morgan'; // help to log the req time, payload, and others
 import cors from 'cors';
 import cookieParser from 'cookie-parser';
 import authRoutes from '#routes/auth.routes.js';
+<<<<<<< HEAD
 import securityMiddleware from '#middleware/security.middleware.js';
+=======
+>>>>>>> 94d3345eb6afec4453bd7fc000aa0f472843577c
 
 const app = express();
 
@@ -29,6 +32,13 @@ app.get('/', (req, res) => {
   res.status(200).send('Hello from Acquisitions!');
 });
 
+<<<<<<< HEAD
+=======
+// app.get('/health', (req, res) => {
+//   res.status(200).json({ status: 'OK', timestamp: new Date().toISOString, uptime: process.uptime() });
+// })
+
+>>>>>>> 94d3345eb6afec4453bd7fc000aa0f472843577c
 app.get('/health', (req, res) => {
   res
     .status(200)
